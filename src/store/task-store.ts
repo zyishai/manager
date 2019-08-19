@@ -52,6 +52,6 @@ export class TaskStore {
 
     @computed
     get tasks() {
-        return this._tasks.slice();
+        return this._tasks;
     }
 }
