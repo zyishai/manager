@@ -40,7 +40,7 @@ export class TaskStore {
     }
 
     @action
-    async removeTask(taskId: string) {
+    async deleteTask(taskId: string) {
         const taskIndex = this._tasks.findIndex(task => task.id === taskId);
 
         if (taskIndex >= 0) {
