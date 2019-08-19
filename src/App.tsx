@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { TaskStore } from './store';
 
-const App: React.FC = () => {
+const App: React.FC<{ store: TaskStore }> = ({ store }) => {
   return (
     <div className="App">
       <header className="App-header">
